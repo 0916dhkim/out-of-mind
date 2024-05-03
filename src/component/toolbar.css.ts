@@ -8,6 +8,9 @@ export const toolbar = style({
 });
 
 export const dragArea = style({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
   flexShrink: 0,
   padding: "0.5rem",
   border: "1px solid black",
