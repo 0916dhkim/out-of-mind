@@ -1,0 +1,31 @@
+{
+  "name": "out-of-mind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && electron-builder"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vanilla-extract/vite-plugin": "^4.0.9",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^30.0.2",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-electron": "^0.28.7"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.15.1",
+    "@vanilla-extract/dynamic": "^2.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "valtio": "^1.13.2",
+    "zod": "^3.23.5"
+  }
+}
