@@ -11,7 +11,11 @@ window.electronAPI.on("task-loaded", ({ task }) => {
 });
 
 export function TaskInput() {
-  const snap = useSnapshot(state);
+  const snap = useSnapshot(state, {
+    // `sync` option is needed to prevent cursor jumping.
+    // Related: https://github.com/pmndrs/valtio/issues/132
+    sync: true,
+  });
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     state.task = e.target.value;
